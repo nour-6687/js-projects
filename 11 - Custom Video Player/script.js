@@ -22,7 +22,10 @@ function updateButton() {
 }
 
 function skip() {
+  // skip is a data attr that comes from the html.
   console.log("skip");
+  console.log(this.dataset);
+  console.log(this.dataset.skip);
   console.log(typeof this.dataset.skip);
   video.currentTime += parseFloat(this.dataset.skip);
   console.log(video.currentTime);
